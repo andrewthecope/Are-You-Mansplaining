@@ -12,6 +12,7 @@
 		494680C61FB3FA7E007DB004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494680C41FB3FA7E007DB004 /* Main.storyboard */; };
 		494680C81FB3FA7E007DB004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494680C71FB3FA7E007DB004 /* Assets.xcassets */; };
 		494680CB1FB3FA7E007DB004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494680C91FB3FA7E007DB004 /* LaunchScreen.storyboard */; };
+		D2B40DFDF1A4BC0ACAAB7EA1 /* Pods_Are_You_Mansplaining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F33168D268284CE5477FAA /* Pods_Are_You_Mansplaining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		494680C71FB3FA7E007DB004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494680CA1FB3FA7E007DB004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494680CC1FB3FA7E007DB004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E8B472AADFE614744184E4 /* Pods-Are You Mansplaining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Are You Mansplaining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Are You Mansplaining/Pods-Are You Mansplaining.debug.xcconfig"; sourceTree = "<group>"; };
+		91F33168D268284CE5477FAA /* Pods_Are_You_Mansplaining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Are_You_Mansplaining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55036709431C909A6893835 /* Pods-Are You Mansplaining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Are You Mansplaining.release.xcconfig"; path = "Pods/Target Support Files/Pods-Are You Mansplaining/Pods-Are You Mansplaining.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B40DFDF1A4BC0ACAAB7EA1 /* Pods_Are_You_Mansplaining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2229E0D6422E23EEB3597FD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E8B472AADFE614744184E4 /* Pods-Are You Mansplaining.debug.xcconfig */,
+				E55036709431C909A6893835 /* Pods-Are You Mansplaining.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E8E9811AD79FD9E80F5DF77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F33168D268284CE5477FAA /* Pods_Are_You_Mansplaining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		494680B41FB3FA7E007DB004 = {
 			isa = PBXGroup;
 			children = (
 				494680BF1FB3FA7E007DB004 /* Are You Mansplaining */,
 				494680BE1FB3FA7E007DB004 /* Products */,
+				2229E0D6422E23EEB3597FD0 /* Pods */,
+				3E8E9811AD79FD9E80F5DF77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 494680CF1FB3FA7E007DB004 /* Build configuration list for PBXNativeTarget "Are You Mansplaining" */;
 			buildPhases = (
+				AEA30DDA9E429A447AF60420 /* [CP] Check Pods Manifest.lock */,
 				494680B91FB3FA7E007DB004 /* Sources */,
 				494680BA1FB3FA7E007DB004 /* Frameworks */,
 				494680BB1FB3FA7E007DB004 /* Resources */,
+				828C781AF90E499EDB1EA109 /* [CP] Embed Pods Frameworks */,
+				1C1A1566F6A09A43FC3A5390 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C1A1566F6A09A43FC3A5390 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Are You Mansplaining/Pods-Are You Mansplaining-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		828C781AF90E499EDB1EA109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Are You Mansplaining/Pods-Are You Mansplaining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEA30DDA9E429A447AF60420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		494680B91FB3FA7E007DB004 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		494680D01FB3FA7E007DB004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E8B472AADFE614744184E4 /* Pods-Are You Mansplaining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		494680D11FB3FA7E007DB004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55036709431C909A6893835 /* Pods-Are You Mansplaining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
